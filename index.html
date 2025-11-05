@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- We'll add content here in the next steps -->
+
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+<header class="bg-dark text-white py-3">
+  <div class="container text-center">
+    <h1>Cafe De Lune</h1>
+    <p class="lead">Savor Every Bite – A Culinary Delight Awaits</p>
+
+  </div>
+</header>
+
+<section class="hero-section text-center text-white d-flex align-items-center" 
+         style="background: linear-gradient(rgba(199, 58, 58, 0.5), rgba(211, 92, 92, 0.5)), 
+                url(https://i.pinimg.com/736x/78/c3/49/78c349bc6ef7afbcb8d99de89b01d074.jpg) center/cover no-repeat;
+                height: 70vh;">
+  <div class="container">
+    <h2 class="display-4 fw-bold">Welcome to Cafe De Lune</h2>
+    <p class="lead">Explore our handpicked menu curated by top chefs</p>
+    <a href="#menu" class="btn btn-warning mt-3">View Menu</a>
+  </div>
+</section>
+
+<section class="text-center py-5" id="menu">
+  <div class="container">
+    <h3 class="mb-4">Our Menu</h3>
+    <div class="btn-group" role="group" aria-label="Menu categories">
+      <button class="btn btn-outline-primary filter-btn" data-category="all">All</button>
+      <button class="btn btn-outline-primary filter-btn" data-category="appetizers">Appetizers</button>
+      <button class="btn btn-outline-primary filter-btn" data-category="main">Main Courses</button>
+      <button class="btn btn-outline-primary filter-btn" data-category="desserts">Desserts</button>
+      <button class="btn btn-outline-primary filter-btn" data-category="beverages">Beverages</button>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="menu-items">
+  <div class="row" id="menuContainer">
+    <!-- Appetizer -->
+    <div class="col-md-4 mb-4 menu-item" data-category="appetizers">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/1d/ad/01/1dad01e4edb8871ace219675e12d06b2.jpg" class="card-img-top" alt="Onion soup">
+        <div class="card-body">
+          <h5 class="card-title">Onion soup</h5>
+          <p class="card-text">Classic french soup made with caramelized onions, beef broth, and topped with bread and cheese.</p>
+          <p class="text-muted">$5.99</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="col-md-4 mb-4 menu-item" data-category="main">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/48/55/3c/48553c9630677e366e437b02b46de7bb.jpg" class="card-img-top" alt="Spaghetti and Meatballs">
+        <div class="card-body">
+          <h5 class="card-title">Spaghetti and Meatballs</h5>
+          <p class="card-text">Tender meatballs simmered in a rich tomato sauce and served over al dente spaghetti.</p>
+          <p class="text-muted">$10.99</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dessert -->
+    <div class="col-md-4 mb-4 menu-item" data-category="desserts">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/0e/c2/89/0ec289492947872976c5c52215280faa.jpg" class="card-img-top" alt="Tiramisu">
+        <div class="card-body">
+          <h5 class="card-title">Tiramisu</h5>
+          <p class="card-text">Classic Italian dessert with mascarpone and coffee.</p>
+          <p class="text-muted">$6.49</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverage -->
+    <div class="col-md-4 mb-4 menu-item" data-category="beverages">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/64/bb/bc/64bbbc45a302b646abee022c00ca0c41.jpg" class="card-img-top" alt="Lemon Iced Tea">
+        <div class="card-body">
+          <h5 class="card-title">Lemon Iced Tea</h5>
+          <p class="card-text">Brewed black tea topped with Fresh lemon juice and mint.</p>
+          <p class="text-muted">$2.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
